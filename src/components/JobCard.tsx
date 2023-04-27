@@ -26,7 +26,7 @@ function JobCard({ job }: JobCardProps) {
     <div
       onClick={() => {
         console.log(job.id)
-        navigate(`/job/${job.id}`)
+        navigate(`/kerja-it.com_clone/job/${job.id}`)
       }}
       className='border p-4 rounded-md w-[450px] space-y-4 cursor-pointer'
     >

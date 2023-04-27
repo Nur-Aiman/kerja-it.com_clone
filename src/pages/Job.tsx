@@ -11,11 +11,11 @@ function Job() {
   const navigate = useNavigate()
 
   const goToJobs = () => {
-    navigate('/')
+    navigate('/kerja-it.com_clone/')
   }
 
   const goToJobDetails = () => {
-    navigate(`/job/${filteredJob.id}`)
+    navigate(`/kerja-it.com_clone/job/${filteredJob.id}`)
   }
 
   // Create a function to filter element in JobData which id === param.id, return an object
