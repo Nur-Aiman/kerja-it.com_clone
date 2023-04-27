@@ -28,7 +28,7 @@ function JobCard({ job }: JobCardProps) {
         console.log(job.id)
         navigate(`/kerja-it.com_clone/job/${job.id}`)
       }}
-      className='border p-4 rounded-md w-[450px] space-y-4 cursor-pointer'
+      className='border p-4 rounded-md w-[200px] space-y-4 cursor-pointer'
     >
       <div>
         <h4 className='text-xl font-medium inline-block'>{job.job}</h4>
