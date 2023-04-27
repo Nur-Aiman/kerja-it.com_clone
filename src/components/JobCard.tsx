@@ -1,6 +1,20 @@
 import { useNavigate } from 'react-router-dom'
 
-function JobCard({ job }) {
+interface Job {
+  id: number
+  job: string
+  company: string
+  post_date: string
+  company_state: string
+  work_type: string
+  stacks: string[]
+}
+
+interface JobCardProps {
+  job: Job
+}
+
+function JobCard({ job }: JobCardProps) {
   // Function to detect if the year is 2023, isNew === true
   const date = new Date(job.post_date)
   const isNew = date.getFullYear() === 2023
