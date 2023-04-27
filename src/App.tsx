@@ -6,11 +6,11 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: '/kerja-it.com_clone/',
       element: <Home />,
     },
     {
-      path: '/job/:id',
+      path: '/kerja-it.com_clone/job/:id',
       element: <Job />,
     },
   ])
