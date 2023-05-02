@@ -31,7 +31,7 @@ function Job() {
     <div>
       <Header />
       <Subheader />
-      <div className='flex justify-center '>
+      <div className='flex justify-center bg-gray-100'>
         <div className=' w-2/5 space-y-4 py-4'>
           <div>
             <span
@@ -49,7 +49,7 @@ function Job() {
             </span>
           </div>
 
-          <div className='border rounded-md px-10 py-10'>
+          <div className='border rounded-md px-10 py-10 bg-white'>
             <div className='space-x-1'>
               {filteredJob.stacks.map((stack, index) => (
                 <p
@@ -71,7 +71,7 @@ function Job() {
               <p>🗓 Posted on {filteredJob.post_date}</p>
               <p>📍{filteredJob.district} </p>
               <p>💼 {filteredJob.work_type}</p>
-              <p> Unspecified</p>
+              <p>🕒 Unspecified</p>
             </div>
             <button
               className='bg-blue-600 text-white px-4 py-2 rounded-md'

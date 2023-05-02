@@ -10,9 +10,11 @@ function Home() {
   // every react function must return a TSX'
   console.log(JobData)
   return (
-    <div>
-      <Header />
-      <Subheader />
+    <div className='bg-gray-100'>
+      <div className='bg-white'>
+        <Header />
+        <Subheader />
+      </div>
 
       <div className='flex justify-center items-center mx-[200px] h-[80px]'>
         <h1 className='text-[36px] font-bold'>Find Tech Jobs In Malaysia MY</h1>
@@ -32,7 +34,10 @@ function Home() {
       </div>
       {/* Job listing */}
 
-      <div className='flex justify-center items-center flex-wrap gap-4 mx-[600px]'>
+      <div
+        className='flex justify-center items-center flex-wrap gap-4 mx-auto'
+        style={{ width: '1500px' }}
+      >
         {/* Job card */}
         {JobData.map((job) => {
           return <JobCard key={job.id} job={job} />
